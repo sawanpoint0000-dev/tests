@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h2>IRCTC</h2>
+
+    <div class="field">
+      <label>Password</label>
+      <div class="box" id="box-password">
+        <span id="password">Purushotam@8434</span>
+        <button class="copy-btn" onclick="copyText('password','box-password',this)">📋</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Govt Used ID No.</label>
+      <div class="box" id="box-govtId">
+        <span id="govtId">----</span>
+        <button class="copy-btn" onclick="copyText('govtId','box-govtId',this)">📋</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>PIN Code</label>
+      <div class="box" id="box-pincode">
+        <span id="pincode">----</span>
+        <button class="copy-btn" onclick="copyText('pincode','box-pincode',this)">📋</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Full Address</label>
+      <div class="box" id="box-address">
+        <span id="address">----</span>
+        <button class="copy-btn" onclick="copyText('address','box-address',this)">📋</button>
+      </div>
+    </div>
+
+    <button class="center-btn" onclick="generateAll()">Generate</button>
+
+    <div id="loader" class="loader hidden">
+      <span class="spinner"></span>
+      <span>Generating...</span>
+    </div>
+
+    <small id="msg"></small>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
